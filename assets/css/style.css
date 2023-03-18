@@ -57,3 +57,18 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: solid 10px black;
+}
+
+.header p {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
