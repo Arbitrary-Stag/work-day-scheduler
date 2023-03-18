@@ -18,6 +18,16 @@ $(document).ready(function() {
     }
   });
 
+  saveBtn.on("click", function (event) {
+    var saved = $(event.target);
+
+    let savedHour = saved.parent().parent().attr("id");
+    let savedEvent = saved.parent().parent().children().eq(1).val();
+
+    localStorage.setItem(savedHour, JSON.stringify(savedEvent));
+  });
+
+
   const today = dayjs().format('dddd, MMMM D YYYY');
   $('#currentDay').text("Today is: " + today);
 
